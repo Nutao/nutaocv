@@ -1,4 +1,4 @@
-# nutao.github.io
-My Personal Blog
+# nutaocv
+My Personal Resume
 
-> 用来记录和分享我的学习笔记
+站点：http://nutaocv.azurewebsites.net/
