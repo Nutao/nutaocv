@@ -306,7 +306,7 @@
 			<!-- item start -->
 			<div class="item backend col-md-3 col-xs-6 ">
 				<div class="item-inner">
-					<figure class="figure">
+					<figure class="figure test1">
 						<img class="img-responsive" src="assets/images/portfolio/easyMiner.png" alt="" />
 					</figure>
 					<div class="content text-left">
@@ -320,7 +320,7 @@
 
 			<div class="item others col-md-3 col-xs-6 ">
 				<div class="item-inner">
-					<figure class="figure">
+					<figure class="figure test2">
 						<img class="img-responsive" src="assets/images/portfolio/patternCon.jpg" alt="" />
 					</figure>
 					<div class="content text-left">
@@ -332,9 +332,9 @@
 				</div><!--//item-inner-->
 			</div><!--//item-->
 
-			<div class="item others col-md-3 col-xs-6 ">
+			<div class="item others col-md-3 col-xs-6">
 				<div class="item-inner">
-					<figure class="figure">
+					<figure class="figure test3">
 						<img class="img-responsive" src="assets/images/portfolio/blog.png" alt="" />
 					</figure>
 					<div class="content text-left">
@@ -362,7 +362,6 @@
 			</div> -->
 
 		</div><!--//item-wrapper-->
-
 	</section><!--//项目经验区块-->
 
 	<section id="contact-section" class="contact-section section">
@@ -409,6 +408,31 @@
 <script type="text/javascript" src="assets/plugins/isotope.pkgd.min.js"></script>
 <!-- Layer -->
 <script type="text/javascript" src="assets/plugins/layer/layer.js"></script>
+
+<script>
+	//弹出一个页面层
+	$('figure.test1').on('click', function(){
+		layer.open({
+			type: 1, title: 'Info',
+			skin: 'layui-layer-molv',
+	//		area: ['600px', '360px'],
+			shadeClose: true, //点击遮罩关闭
+			content: '\<\div style="padding:20px;"><img class="img-responsive" src="assets/images/portfolio/easyMiner.png" alt="" />项目描述：一个工业ETL平台，能够实现大规模的工业数据的抽取，清洗，转换，值映射，行列删除，记录去重，时间粒度划分以及文件自动分类合并等功能。我的主要工作如下：<p>1，设计工业大数据的分布式文件系统（HDFS+MongoDB）存储方案;<p>2，结合产品对DB的要求，使用YCSB工具对主流NoSQL（redis, mongodb, cassandra, hbase）和MySQL性能测试;<p>3，设计MongoDB ReplicatSet（三台主机）存储架构。并结合业务特点优化其配置;<p>4，探索Apache Spark和Kettle在ETL中的计算性能。</div>'
+		});
+	});
+
+	$('figure.test2').on('click', function(){
+		layer.open({
+			type: 1, title: 'Info',
+			skin: 'layui-layer-molv',
+			//		area: ['600px', '360px'],
+			shadeClose: true, //点击遮罩关闭
+			content: '\<\div style="padding:20px;"><img class="img-responsive" src="assets/images/portfolio/patternCon.jpg" alt="" /><p>1，利用CCD每隔5秒对纱管进行拍照，并将图像数据存到数据库里面。<p>2，将进行灰度阈值分割并使用数学形态学降噪。<p>3，使用Kernel算子检测纱管边缘，编写算法确定纱管在图片中的位置，并将其精确截取。<p>4，对图像矫正，并将图像分段，依次将每段的特征与标准参数值进行比对，并实时反馈分析结果。<p><b>（此项目正在申请两项专利）<\/div>'
+		});
+	});
+
+</script>
+
 
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
