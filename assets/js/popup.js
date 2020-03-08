@@ -15,7 +15,7 @@ $('figure.test2').on('click', function(){
         skin: 'layui-layer-molv',
         //		area: ['600px', '360px'],
         shadeClose: true, //点击遮罩关闭
-        content: '\<\div style="padding:20px;"><img class="img-responsive" src="assets/images/portfolio/patternCon.jpg" alt="" /><p>1，利用CCD每隔5秒对纱管进行拍照，并将图像数据存到数据库里面。<p>2，将进行灰度阈值分割并使用数学形态学降噪。<p>3，使用Kernel算子检测纱管边缘，编写算法确定纱管在图片中的位置，并将其精确截取。<p>4，对图像矫正，并将图像分段，依次将每段的特征与标准参数值进行比对，并实时反馈分析结果。<p><b>（此项目正在申请两项专利）<\/div>'
+        content: '\<\div style="padding:20px;"><img class="img-responsive" src="assets/images/portfolio/patternCon.jpg" alt="" /><p>1，利用CCD每隔5秒对纱管进行拍照，并将图像数据存到数据库里面。<p>2，将进行灰度阈值分割并使用数学形态学降噪。<p>3，使用Kernel算子检测纱管边缘，编写算法确定纱管在图片中的位置，并将其精确截取。<p>4，对图像矫正，并将图像分段，依次将每段的特征与标准参数值进行比对，并实时反馈分析结果。<p><b>（此项目已申请三项专利）<\/div>'
     });
 });
 
