@@ -65,11 +65,11 @@
 		<div id="page-nav-wrapper" class="page-nav-wrapper text-center">
 			<div class="container">
 				<ul id="page-nav" class="nav page-nav list-inline">
-					<li><a class="scrollto" href="#experiences-section">工作经历</a></li>
 					<li><a class="scrollto" href="#eudcation-section">教育经历</a></li>
+					<li><a class="scrollto" href="#experiences-section">工作经历</a></li>
+					<li><a class="scrollto" href="#portfolio-section">项目实践</a></li>
 					<li><a class="scrollto" href="#skills-section">专业技能</a></li>
-					<li><a class="scrollto" href="#testimonials-section">志愿实践</a></li>
-					<li><a class="scrollto" href="#portfolio-section">项目经验</a></li>
+					<li><a class="scrollto" href="#testimonials-section">校内实践</a></li>
 					<li><a class="scrollto" href="#contact-section">联系方式</a></li>
 				</ul><!--//page-nav-->
 			</div>
@@ -79,69 +79,6 @@
 </header><!--//header-->
 
 <div class="wrapper container">
-	<section id="experiences-section" class="experiences-section section">
-		<h2 class="section-title">工作经历</h2>
-		<div class="timeline">
-
-		<div class="item">
-			<div class="work-place">
-				<h3 class="place">招商银行-招银网络科技（深圳）有限公司</h3>
-				<div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>成都</div>
-			</div>
-			<div class="job-meta">
-				<div class="title">系统工程师（云计算方向）</div>
-				<div class="time">2018/07 - 至今</div>
-			</div><!--//job-meta-->
-			<div class="job-desc">
-				主要从事招行PaaS容器平台（Kubernetes）的研发，专注于CI/CD及DNS智能解析相关领域。具体如下：
-				<div>
-					<b style="font-size: 16px; line-height: 40px">项目一：PaaS容器平台（K8S）</b>
-					<ul>
-						<li>负责招行两地三中心（多AZ）容器平台的架构设计和部署实施。</li>
-						<li>负责Kubernetes ansible批量部署工具和运维工具研发。</li>
-						<li>协助招行应用全面上云的方案落地，制定开发人员应用迁移上云的解决方案。</li>
-					</ul>
-				</div>
-
-				<div>
-					<b style="font-size: 16px; line-height: 40px">项目二：流量管控中心</b>
-					<ul>
-						<li>主导总行容器平台应用高效流量分发策略工具的研发，DNS智能解析工具研发</li>
-						<li>负责该产品的详细设计、编码实现和自动化测试</li>
-					</ul>
-				</div>
-			</div><!--//job-desc-->
-		</div><!--//item-->
-
-		<!-- 工作经历1	-->
-		<div class="item">
-			<div class="work-place">
-				<h3 class="place">中冶赛迪技术研究中心有限公司</h3>
-				<div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>重庆</div>
-			</div>
-			<div class="job-meta">
-				<div class="title">大数据产品研发部实习生</div>
-				<div class="time">2017/04 - 2017/07</div>
-			</div><!--//job-meta-->
-			<div class="job-desc">
-				本人在中冶赛迪技术研发中心实习期间，主要做工业大数据的二进制文件和数据的分布式解决方案以及ETL相关的工作。具体如下：
-				<ul>
-					<li>设计工业大数据的分布式文件系统（HDFS+MongoDB）存储方案</li>
-					<li>结合产品对DB的要求，使用YCSB工具对主流NoSQL（Redis，MongoDB，Cassandra，Hbase）和MySQL性能测试，最终根据测试结果选用MongoDB作为产品DB</li>
-					<li>设计MongoDB ReplicatSet（三台主机）存储架构。并结合业务特点优化其配置</li>
-					<li>探索Apache Spark在ETL中的计算性能</li>
-					<li>探索Hadoop集成部署工具Ambari</li>
-				</ul>
-			</div><!--//job-desc-->
-			</div><!--//item-->
-
-
-			<!-- 工作经历 item	-->
-
-
-		</div><!--//timeline-->
-	</section><!--//section-->
-
 	<section id="eudcation-section" class="education-section section">
 		<h2 class="section-title">教育经历</h2>
 		<div class="row">
@@ -180,8 +117,159 @@
 				</div><!--//item-inner-->
 			</div><!--//item-->
 		</div><!--//row-->
-	</section><!--//section-->
+	</section><!--//education-section-->
 
+	<section id="experiences-section" class="experiences-section section">
+		<h2 class="section-title">工作经历</h2>
+		<div class="timeline">
+
+		<div class="item">
+			<div class="work-place">
+				<h3 class="place">招商银行-招银网络科技（深圳）有限公司</h3>
+				<div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>成都</div>
+			</div>
+			<div class="job-meta">
+				<div class="title">系统工程师（云计算方向）</div>
+				<div class="time">2018/07 - 至今</div>
+			</div><!--//job-meta-->
+			<div class="job-desc">
+				主要从事招行PaaS容器平台（Kubernetes）的研发，专注于CI/CD及DNS智能解析相关领域。具体如下：
+				<div>
+					<b style="font-size: 16px; line-height: 40px">项目一：流量管控中心</b>
+					<ul>
+						<li>主导总行容器平台应用高效流量分发策略工具三个迭代版本的研发</li>
+						<li>负责该产品的详细设计、编码实现、自动化测试和上线发布全部过程</li>
+						<li>该项目实现了不同网域间Domain共用，解决了Domain共用难题。</li>
+						<li>该项目实现了不同容器集群中同一应用，能基于用户ClientIP进行流量智能分发，让用户尽可能访问最近的应用。</li>
+						<li>实现了通过负载均衡算法控制域名解析返回结果，实现流量负载均衡。</li>
+						<li>项目引入了基于ETCD的分布式锁，让流量管控中心可以在容器集群中无依赖多实例横向扩展。</li>
+						<li>实现了基于Kubernets Label-Selector机制的负载分片，将PaaS容器平台灰度发布，蓝绿发布的影响降低至亚毫秒级。</li>
+						<li>为用户提供了跨平台（Windows/Linux）的域名智能解析工具。</li>
+					</ul>
+				</div>
+				<div>
+					<b style="font-size: 16px; line-height: 40px">项目二：PaaS容器平台（K8S）</b>
+					<ul>
+						<li>负责招行两地三中心（多AZ）容器平台的架构设计和部署实施。</li>
+						<li>负责容器平台流量入口分发策略的设计、实施和工具开发。</li>
+						<li>为Devops Pipline提供基于容器(DID)的编译环境和多语言编译镜像。支持自动化的CI/CD</li>
+						<li>负责Kubernetes ansible批量部署工具和运维工具研发。</li>
+						<li>负责基于Heketi-GlusterFS存储方案的实施落地</li>
+						<li>招行应用全面上云的方案落地，制定开发人员应用迁移上云的解决方案。</li>
+					</ul>
+				</div>
+			</div><!--//job-desc-->
+		</div><!--//item-->
+
+		<!-- 工作经历1	-->
+		<div class="item">
+			<div class="work-place">
+				<h3 class="place">中冶赛迪技术研究中心有限公司</h3>
+				<div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>重庆</div>
+			</div>
+			<div class="job-meta">
+				<div class="title">大数据产品研发部实习生</div>
+				<div class="time">2017/04 - 2017/07</div>
+			</div><!--//job-meta-->
+			<div class="job-desc">
+				本人在中冶赛迪技术研发中心实习期间，主要做工业大数据的二进制文件和数据的分布式解决方案以及ETL相关的工作。具体如下：
+				<ul>
+					<li>设计工业大数据的分布式文件系统（HDFS+MongoDB）存储方案</li>
+					<li>探索Apache Spark在ETL中的计算性能</li>
+					<li>探索Hadoop集成部署工具Ambari</li>
+				</ul>
+			</div><!--//job-desc-->
+			</div><!--//item-->
+
+
+			<!-- 工作经历 item	-->
+
+
+		</div><!--//timeline-->
+	</section><!--//work-exp-section-->
+
+	<section id="portfolio-section" class="portfolio-section section">
+		<h2 class="section-title">项目实践</h2>
+		<ul id="filters" class="filters clearfix">
+			<li class="type active" data-filter="*">全部</li>
+			<li class="type" data-filter=".backend">后端开发</li>
+			<li class="type" data-filter=".cloud">云计算</li>
+			<li class="type" data-filter=".others">其他</li>
+		</ul><!--//filters分类器-->
+
+		<div class="items-wrapper isotope row">
+			<!-- item start -->
+			<div class="item cloud col-md-3 col-xs-6 ">
+				<div class="item-inner">
+					<figure class="figure k8s-project">
+						<img class="img-responsive" src="assets/images/portfolio/k8s.jpg" alt="" />
+					</figure>
+					<div class="content text-left">
+						<h3 class="sub-title">Kubernetes容器平台</h3>
+						<div class="meta">Docker/ETCD/CoreDNS</div>
+						<div class="action"><a href="#portfolio-section"></a>: )</div>
+					</div><!--//content-->
+				</div><!--//item-inner-->
+			</div><!--//item-->
+
+			<div class="item cloud col-md-3 col-xs-6 ">
+				<div class="item-inner">
+					<figure class="figure dns-center">
+						<img class="img-responsive" src="assets/images/portfolio/dns.png" alt="" />
+					</figure>
+					<div class="content text-left">
+						<h3 class="sub-title">流量管控中心</h3>
+						<div class="meta">Golang/ETCD/CoreDNS</div>
+						<div class="action"><a href="#portfolio-section"></a>: )</div>
+					</div><!--//content-->
+				</div><!--//item-inner-->
+			</div><!--//item-->
+
+			<div class="item backend col-md-3 col-xs-6 ">
+				<div class="item-inner">
+					<figure class="figure test1">
+						<img class="img-responsive" src="assets/images/portfolio/easyMiner.png" alt="" />
+					</figure>
+					<div class="content text-left">
+						<h3 class="sub-title"><a href="https://bigdata.cisdi.com.cn/">工业大数据ETL平台</a></h3>
+						<div class="meta">Java/MongoDB</div>
+						<div class="action"><a href="https://bigdata.cisdi.com.cn/">View Website</a></div>
+					</div><!--//content-->
+					<!-- <a class="link-mask" href="https://bigdata.cisdi.com.cn/"></a> -->
+				</div><!--//item-inner-->
+			</div><!--//item-->
+
+			<div class="item others col-md-3 col-xs-6 ">
+				<div class="item-inner">
+					<figure class="figure test2">
+						<img class="img-responsive" src="assets/images/portfolio/patternCon.jpg" alt="" />
+					</figure>
+					<div class="content text-left">
+						<h3 class="sub-title"><a href="#portfolio-section">细纱管尾纱识别</a></h3>
+						<div class="meta">Matlab</div>
+						<div class="action"><a href="#portfolio-section"></a>: )</div>
+					</div><!--//content-->
+					<!-- <a class="link-mask" href="#portfolio-section"></a> -->
+				</div><!--//item-inner-->
+			</div><!--//item-->
+
+			<!-- 模板 -->
+			<!-- <div class="item  backend col-md-3 col-xs-6 ">
+				<div class="item-inner">
+					<figure class="figure">
+						<img class="img-responsive" src="assets/images/portfolio/portfolio-8.jpg" alt="" />
+					</figure>
+					<div class="content text-left">
+						<h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+						<div class="meta">Python/AngularJS</div>
+						<div class="action"><a href="#">View on Github</a></div>
+					</div>
+					<a class="link-mask" href="#"></a>
+				</div>
+			</div> -->
+
+		</div><!--//item-wrapper-->
+	</section><!--//project-section-->
 
 	<section id="skills-section" class="skills-section section text-center">
 		<h2 class="section-title">专业技能</h2>
@@ -304,102 +392,18 @@
 
 	</section><!--//section-->
 
-
-	<section id="portfolio-section" class="portfolio-section section">
-		<h2 class="section-title">项目经验</h2>
-		<ul id="filters" class="filters clearfix">
-			<li class="type active" data-filter="*">全部</li>
-			<li class="type" data-filter=".backend">后端开发</li>
-			<li class="type" data-filter=".cloud">云计算</li>
-			<li class="type" data-filter=".others">其他</li>
-		</ul><!--//filters分类器-->
-
-		<div class="items-wrapper isotope row">
-			<!-- item start -->
-			<div class="item cloud col-md-3 col-xs-6 ">
-				<div class="item-inner">
-					<figure class="figure k8s-project">
-						<img class="img-responsive" src="assets/images/portfolio/k8s.jpg" alt="" />
-					</figure>
-					<div class="content text-left">
-						<h3 class="sub-title">Kubernetes容器平台</h3>
-						<div class="meta">Docker/ETCD/CoreDNS</div>
-						<div class="action"><a href="#portfolio-section"></a>: )</div>
-					</div><!--//content-->
-				</div><!--//item-inner-->
-			</div><!--//item-->
-
-			<div class="item cloud col-md-3 col-xs-6 ">
-				<div class="item-inner">
-					<figure class="figure fqdn">
-						<img class="img-responsive" src="assets/images/portfolio/dns.png" alt="" />
-					</figure>
-					<div class="content text-left">
-						<h3 class="sub-title">流量管控中心</h3>
-						<div class="meta">Golang/ETCD/CoreDNS</div>
-						<div class="action"><a href="#portfolio-section"></a>: )</div>
-					</div><!--//content-->
-				</div><!--//item-inner-->
-			</div><!--//item-->
-
-			<div class="item backend col-md-3 col-xs-6 ">
-				<div class="item-inner">
-					<figure class="figure test1">
-						<img class="img-responsive" src="assets/images/portfolio/easyMiner.png" alt="" />
-					</figure>
-					<div class="content text-left">
-						<h3 class="sub-title"><a href="https://bigdata.cisdi.com.cn/">工业大数据ETL平台</a></h3>
-						<div class="meta">Java/MongoDB</div>
-						<div class="action"><a href="https://bigdata.cisdi.com.cn/">View Website</a></div>
-					</div><!--//content-->
-					<!-- <a class="link-mask" href="https://bigdata.cisdi.com.cn/"></a> -->
-				</div><!--//item-inner-->
-			</div><!--//item-->
-
-			<div class="item others col-md-3 col-xs-6 ">
-				<div class="item-inner">
-					<figure class="figure test2">
-						<img class="img-responsive" src="assets/images/portfolio/patternCon.jpg" alt="" />
-					</figure>
-					<div class="content text-left">
-						<h3 class="sub-title"><a href="#portfolio-section">细纱管尾纱识别</a></h3>
-						<div class="meta">Matlab</div>
-						<div class="action"><a href="#portfolio-section"></a>: )</div>
-					</div><!--//content-->
-					<!-- <a class="link-mask" href="#portfolio-section"></a> -->
-				</div><!--//item-inner-->
-			</div><!--//item-->
-
-			<!-- 模板 -->
-			<!-- <div class="item  backend col-md-3 col-xs-6 ">
-				<div class="item-inner">
-					<figure class="figure">
-						<img class="img-responsive" src="assets/images/portfolio/portfolio-8.jpg" alt="" />
-					</figure>
-					<div class="content text-left">
-						<h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-						<div class="meta">Python/AngularJS</div>
-						<div class="action"><a href="#">View on Github</a></div>
-					</div>
-					<a class="link-mask" href="#"></a>
-				</div>
-			</div> -->
-
-		</div><!--//item-wrapper-->
-	</section><!--//项目经验区块-->
-
 	<section id="contact-section" class="contact-section section">
 		<h2 class="section-title">联系方式</h2>
 		<div class="intro">
 			<img class="profile-image" src="assets/images/me2.png" alt="">
 			<div class="dialog">
-				<p>本人是2018年应届毕业生，研究生学历。</p>
-				<p><strong>我主要从事以下方面的工作: </strong></p>
+				<p>本人是西南大学(211) 2018届毕业生，研究生学历。</p>
+				<p><strong>主要从事以下方面的工作: </strong></p>
 				<ul class="list-unstyled service-list">
-					<li><i class="fa fa-check" aria-hidden="true"></i>Java 后台开发</li>
-					<li><i class="fa fa-check" aria-hidden="true"></i>MongoDB集群的搭建和运维优化</li>
-					<li><i class="fa fa-check" aria-hidden="true"></i>MySQL集群的搭建和运维优化</li>
-					<li><i class="fa fa-check" aria-hidden="true"></i>HDFS分布式文件系统的应用</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> Golang 后台开发</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> DNS智能解析</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> Kubernetes IngressController持续探索</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> Devops CI/CD 持续集成，持续部署</li>
 					<!-- <li><i class="fa fa-check" aria-hidden="true"></i></li> -->
 				</ul>
 				<p>欢迎随时通过 <a href="mailto:chengzhengguo123@qq.com">邮件</a> 与我取得联系，同时欢迎访问我的个人博客 <a href="https://nutao.github.io/">Nutao</a></p>

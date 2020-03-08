@@ -26,22 +26,29 @@ $('figure.k8s-project').on('click', function(){
         skin: 'layui-layer-molv',
         shadeClose: true, //点击遮罩关闭
         content: '\<\div style="padding:10px;"><img class="img-responsive" src="assets/images/portfolio/k8s.jpg" alt="" />        <p>\n' +
-            '        <p>本项目主要从事招行PaaS容器平台（Kubernetes）的运维研发，专注于K8S的部署和CI/CD问题的解决。具体如下：</p>\n' +
+            '        <p>在本项目主要从事招行PaaS容器平台（Kubernetes）的运维研发，专注于K8S的部署和CI/CD问题的解决。具体如下：</p>\n' +
             '        <p>1，设计了招行两地三中心（多AZ）容器平台的架构和部署实施方案。\n' +
             '        <p>2，负责Kubernetes ansible批量部署工具和运维工具研发。\n' +
-            '        <p>3，设计并实施了容器平台存储方案(GlusterFS)。\n' +
-            '        <p>4，协助招行应用全面上云的方案落地，制定开发人员应用迁移上云的解决方案。' +
+            '        <p>3，为Devops Pipline提供基于容器(DID)的编译环境和多语言编译镜像。支持自动化的CI/CD。\n' +
+            '        <p>4，设计并实施了容器平台存储方案(GlusterFS)。\n' +
+            '        <p>5，协助招行应用全面上云的方案落地，制定开发人员应用迁移上云的解决方案。' +
             '<\/div>'
     });
 });
 
 
-$('figure.fqdn').on('click', function(){
+$('figure.dns-center').on('click', function(){
     layer.open({
         type: 1, title: '本人贡献',
         skin: 'layui-layer-molv',
         shadeClose: true, //点击遮罩关闭
-        content: '\<\div style="padding:10px;"><img class="img-responsive" src="assets/images/portfolio/dns.png" alt="" /> <\/div>'
+        content: '\<\div style="padding:10px;"><img class="img-responsive" src="assets/images/portfolio/dns.png" alt="" />        <p> 该项目阶段性实现了招行总行域名注册及基于ClientIP的流量分发智能控制。本人在项目主导了三个迭代的开发。主要职责如下：\n' +
+            '        <p>1，实现了不同网域间Domain共用时智能解析，解决了Domain划分难题。\n' +
+            '        <p>2，实现了多中心PaaS容器集群中应用，能基于用户ClientIP的域名智能解析，让用户尽可能访问距离最近的应用，大大降低访问延迟。\n' +
+            '        <p>3，实现了通过控制域名解析返回结果，配合集群的LB，实现流量负载均衡。且支持LB无依赖横向多实例扩展。\n' +
+            '        <p>4，引入了基于ETCD的分布式锁，让流量管控中心可以在容器集群中无依赖多实例横向扩展。\n' +
+            '        <p>5，实现了基于Kubernets Label-Selector机制的负载分片，将PaaS容器平台灰度发布，蓝绿发布的影响降低至亚毫秒级。\n' +
+            '        <p>6，为用户提供了跨平台（Windows/Linux/Web）的域名智能解析工具。<\/div>'
     });
 });
 
